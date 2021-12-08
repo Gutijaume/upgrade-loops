@@ -6,22 +6,15 @@ const alumns = [
 		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
 ]
 
+let print = (data) => console.log(data) 
 
-let print = (data) => console.log(data)
 
-let isAproved = (arrayAlumns) =>{
-    arrayAlumns.forEach((alumn) =>{
-        if (alumn.T1 === true)
-        return (result)
-    }) 
-
-alumns.forEach((alumn)=>{
-   isAproved (alumns, alumn.name)
-})
-
-isAproved(alumns, "Pepe Viruela")
-
+let isAproved = (data) =>{
+for (let i = 0; i < data.length; i++){
+    
+   if  ((data[i].T1 === true && data[i].T2 === true) || (data[i].T2 === true && data[i].T3 === true) || (data[i].T1 === true && data[i].T3 === true)){
+       print (data[i].name + " is aproved")
+   }
+} 
 }
-
-let notaFinal = (isAproved + "is aproved")
-print (notaFinal)
+isAproved(alumns)
