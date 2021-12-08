@@ -14,7 +14,7 @@ for (let i = 0; i < data.length; i++){
     
    if  ((data[i].T1 === true && data[i].T2 === true) || (data[i].T2 === true && data[i].T3 === true) || (data[i].T1 === true && data[i].T3 === true)){
        print (data[i].name + " is aproved")
-   }
-} 
+   } else {print(data[i].name + " is not aproved")}
+}
 }
 isAproved(alumns)
