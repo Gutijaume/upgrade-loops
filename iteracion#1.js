@@ -7,11 +7,7 @@ const products = [
   "AC/DC Camiseta",
 ];
 
-
-
-
-
-    let showRep = (arrayProducts) =>{
+   let showRep = (arrayProducts) =>{
         arrayProducts.forEach((product) =>{
             if (product.includes("Camiseta"))
             console.log(product)

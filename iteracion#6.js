@@ -6,6 +6,8 @@ const toys = [
   { id: 40, name: "El gato felix" },
 ];
 
+
+
 let catToys = (data) => {
   let filtered = data.filter((toy) => toy.name.includes("gato"));
   console.log(filtered);
@@ -13,3 +15,9 @@ let catToys = (data) => {
 
 catToys(toys);
 
+
+for (let value of toys){
+  if(value.name.includes("gato")){
+    
+  }
+} 

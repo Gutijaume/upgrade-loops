@@ -5,9 +5,12 @@ weight: '259kg'};
 
 let showData = (data) => {
     for (let prop in data){
-        console.log(`${prop}: ${data[prop[1]]}`)
+        console.log(`${prop}: ${data[prop]}`)
     }
 }
 
 showData(alien)
+
+
+
 

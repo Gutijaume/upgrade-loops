@@ -11,12 +11,14 @@ let eliminator = (data) => {
     
   for (let i = 0; i < data.length; i++) {
     if (data[i].id !== 11 && data[i].id !== 40) {
-      console.log (data[i])
+      console.log(data[i])
     }
-  }   
+  } 
 };
 
-eliminator (placesToTravel)
+eliminator(placesToTravel)
+
+
 
 
 
