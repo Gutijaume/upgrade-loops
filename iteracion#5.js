@@ -8,12 +8,15 @@ const placesToTravel = [
 ];
 
 
+let placesToTravel2 = []
 
 for (let i = 0; i < placesToTravel.length; i ++){
   if (placesToTravel[i].id !== 11 && placesToTravel[i].id !== 40){
-    console.log (placesToTravel[i])
+    placesToTravel2.push(placesToTravel[i])
   }
 }
+
+console.log(placesToTravel2)
 
 
 
