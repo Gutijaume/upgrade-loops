@@ -3,14 +3,7 @@ race: 'Cucusumusu',
 planet: 'Eden',
 weight: '259kg'};
 
-let showData = (data) => {
-    for (let prop in data){
-        console.log(`${prop}: ${data[prop]}`)
-    }
+for (let prop in alien){
+    console.log(`${prop}: ${alien[prop]}`)
 }
-
-showData(alien)
-
-
-
 
