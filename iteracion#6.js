@@ -8,16 +8,13 @@ const toys = [
 
 
 
-let catToys = (data) => {
-  let filtered = data.filter((toy) => toy.name.includes("gato"));
-  console.log(filtered);
-};
-
-catToys(toys);
-
-
-for (let value of toys){
-  if(value.name.includes("gato")){
-    
+let toysArrayWithOutCats = []
+for (let toy of toys){
+  if(toy.name.includes("gato")){
+    toys.splice(toy, 0)
+  } else {
+    toysArrayWithOutCats.push(toy)
   }
 } 
+
+console.log (toysArrayWithOutCats)
